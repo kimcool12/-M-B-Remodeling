@@ -10,7 +10,7 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: sticky;
     z-index: 100;
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -417,7 +417,7 @@
     width: 9rem;
 }
 
-.sponsorssection p{
+.sponsorssection p {
     margin: 8rem;
     width: 50%;
     font-size: large;
@@ -425,11 +425,12 @@
     color: rgb(171, 171, 171);
 }
 
-.socialinks{
+.socialinks {
     margin-right: 3rem;
     margin-top: -9rem;
 }
-.socialinks a{
+
+.socialinks a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
@@ -437,6 +438,251 @@
     margin-right: 1rem;
     transition: all 0.3s ease;
 }
-.socialinks a:hover{
+
+.socialinks a:hover {
     color: rgb(170, 170, 170);
+}
+
+
+
+/*Mobil view*/
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        overflow-x: hidden;
+        width: 94%;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+
+    /* Hero Section */
+    .herobg {
+        min-height: 70vh;
+        filter: brightness(0.7);
+        width: 103%;
+        background-attachment: scroll;
+        overflow-x: hidden;
+        margin-right: 0;
+
+
+    }
+
+    .herotext {
+        width: 100%;
+        text-align: center;
+    }
+
+    .herotext h2 {
+        font-size: 2.7rem;
+        line-height: 1.2;
+    }
+
+    .herotext p {
+        margin-top: 1rem;
+    }
+
+    .herotext a {
+        margin-left: 0;
+    }
+
+
+    /* About Us Section */
+    .Aboutus {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        justify-content: space-between;
+
+    }
+
+    .aboutimg img {
+        margin-top: 8rem;
+        width: 103%;
+        margin: 0;
+    }
+
+    .abouttext {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .abouttext h3 {
+        font-size: 1.4rem;
+        font-size: 200;
+        letter-spacing: 1.4;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .abouttext p {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+        padding-left: 2.8rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .abouttext a {
+        margin-bottom: 7rem;
+
+    }
+
+
+    /* Why Choose Us Section */
+    .WhyChooseUs {
+        padding: 4rem 1rem;
+    }
+
+    .reasons {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .reasons div {
+        width: 100%;
+        margin: 0 0 3rem 0;
+    }
+    .reasons div h3{
+        width: 70%;
+        margin: 0;
+        padding-left: 3rem;
+    }
+    .reasons div p {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+
+    /*  Services Section  */
+    .Services {
+        padding: 4rem 1rem;
+        width: 94%;
+    }
+
+    .Services h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.servicelist h3{
+     margin-left: -1rem;
+     justify-content: end;
+}
+
+    .servicelist {
+        flex-direction: column;
+    }
+
+    .servicelist div {
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .servicelist div h3 {
+        width: 100%;
+        padding: 8rem 1rem;
+        background-size: cover !important;
+    }
+
+    .Services button {
+        display: block;
+        margin: 2rem 0 0 1rem;
+        width: 90%;
+        padding:1rem 1.5rem;
+    }
+
+    /*  Customers Review Section  */
+    .customers {
+        padding: 4rem 1rem;
+    }
+
+    .customers h3 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .customersreview {
+        flex-direction: column;
+    }
+
+    .customersreview div {
+        width: 100%;
+        margin: 0 0 3rem 0;
+    }
+
+    /*  Contact Us Section  */
+    .contactview {
+        flex-direction: column;
+        padding: 4rem 1rem;
+        gap: 3rem;
+        width: 96%;
+    }
+
+    .introaspect,
+    .inputes {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .inputes input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+   
+    
+    /*Sponsors Section*/
+    .sponsorssection {
+        padding: 4rem 1rem;
+        width: 95%;
+    }
+
+    .sponsors {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sponsorssection p {
+        width: 90%;
+        margin: 4rem auto 2rem auto;
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .socialinks {
+        margin: 0;
+        text-align: center;
+        float: none;
+        padding-top: 1rem;
+    }
+
+    .socialinks a {
+        float: none;
+        display: inline;
+        margin: 0 0.5rem;
+    }
 }
